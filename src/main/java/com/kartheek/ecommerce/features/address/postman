@@ -1,0 +1,12 @@
+
+
+http://localhost:8082/api/admin/address/add
+Request:
+{
+    "buildingName" : "APHB colony",
+     "street" : "APHB colony",
+      "city" : "Hyderabad",
+       "pinCode" : "518124",
+       "state" : "TS AP",
+       "country" : "India"
+}

@@ -1,6 +1,7 @@
 package com.kartheek.ecommerce.admin.product.entity;
 
 
+import com.kartheek.ecommerce.admin.category.entity.Category;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -20,6 +21,18 @@ public class Product {
     @NotBlank
     @Size(min = 6, message = "Product description must contain atleast 6 characters")
     private String description;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 
     private Integer quantity;
     private double price;

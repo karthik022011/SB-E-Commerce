@@ -5,6 +5,8 @@ import com.kartheek.ecommerce.admin.product.entity.Product;
 import com.kartheek.ecommerce.admin.product.model.ProductDTO;
 import com.kartheek.ecommerce.admin.product.model.ProductResDTO;
 
+import java.util.List;
+
 public interface ProductService {
     ProductDTO createProduct(ProductDTO productDTO);
 
@@ -12,5 +14,7 @@ public interface ProductService {
 
     String deleteProduct(Long productId);
 
-    ProductResDTO getAllProducts();
+    List<ProductDTO> getAllProducts();
+
+    List<ProductDTO> getProductsByCategory(Long categoryId);
 }

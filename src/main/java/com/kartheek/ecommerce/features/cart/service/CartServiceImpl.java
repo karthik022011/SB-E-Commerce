@@ -20,7 +20,7 @@ public class CartServiceImpl implements CartService {
     }
 
     @Override
-    public String deleteCartItem(Long cartId, Long productId) {
+    public String removeProductFromCart(Long cartId, Long productId) {
         return null;
     }
 }

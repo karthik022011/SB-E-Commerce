@@ -1,6 +1,6 @@
 
 
-http://localhost:8082/api/admin/address/add
+POST http://localhost:8082/api/admin/address/add
 Request:
 {
     "buildingName" : "APHB colony",
@@ -8,5 +8,8 @@ Request:
       "city" : "Hyderabad",
        "pinCode" : "518124",
        "state" : "TS AP",
-       "country" : "India"
+       "country" : "India",
+       "userId" : "1"
 }
+
+GET http://localhost:8082/api/address/1 -> Get Address By UserId

@@ -1,5 +1,6 @@
 package com.kartheek.ecommerce.features.address.entity;
 
+import com.kartheek.ecommerce.user.entity.RegisterUser;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -35,6 +36,18 @@ public class Address {
     @NotBlank
     @Size(min = 2, message = "Country name must contain atleast 2 characters")
     private String country;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private RegisterUser user;
+
+    public RegisterUser getUser() {
+        return user;
+    }
+
+    public void setUser(RegisterUser user) {
+        this.user = user;
+    }
 
     public Long getAddressId() {
         return addressId;

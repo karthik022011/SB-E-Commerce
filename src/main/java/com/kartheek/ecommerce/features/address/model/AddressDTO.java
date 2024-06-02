@@ -2,6 +2,7 @@ package com.kartheek.ecommerce.features.address.model;
 
 public class AddressDTO {
     private Long addressId;
+    private Long userId;
     private String buildingName;
     private String street;
     private String city;
@@ -15,6 +16,14 @@ public class AddressDTO {
 
     public void setAddressId(Long addressId) {
         this.addressId = addressId;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
     public String getBuildingName() {

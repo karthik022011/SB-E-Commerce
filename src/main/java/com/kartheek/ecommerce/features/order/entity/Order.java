@@ -7,5 +7,9 @@ import jakarta.persistence.*;
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long cartId;
+    private Long orderId;
+
+    private Double orderTotalPrice;
+
+    private int orderTotalItemsCount;
 }

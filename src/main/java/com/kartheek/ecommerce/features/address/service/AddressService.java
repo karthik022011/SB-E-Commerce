@@ -8,11 +8,7 @@ import java.util.List;
 
 public interface AddressService {
     AddressDTO createAddress(AddressDTO addressDTO);
-
-    List<AddressDTO> getAddressByUserId(Long userId);
-
-
+    List<AddressDTO> getAllAddressByUserId(Long userId);
     AddressDTO updateAddress(Address address, Long addressId);
-
     String deleteAddress(Long addressId);
 }

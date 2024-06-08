@@ -1,9 +1,10 @@
 package com.kartheek.ecommerce.features.cart.repository;
 
 
-import com.kartheek.ecommerce.features.address.entity.Address;
+
+import com.kartheek.ecommerce.features.cart.entity.Cart;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CartRepository extends JpaRepository<Address, Long> {
+public interface CartRepository extends JpaRepository<Cart, Long> {
 
 }

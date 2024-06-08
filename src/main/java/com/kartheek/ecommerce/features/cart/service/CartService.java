@@ -1,14 +1,17 @@
 package com.kartheek.ecommerce.features.cart.service;
 
 
+import com.kartheek.ecommerce.features.cart.model.request.AddToCartReqDTO;
 import com.kartheek.ecommerce.features.cart.model.CartDTO;
 
 public interface CartService {
-    CartDTO addProductToCart(Long cartId, Long productId, Integer quantity);
+    String addProductToCart(AddToCartReqDTO addToCartReqDTO);
 
     String removeProductFromCart(Long cartId, Long productId);
 
-    //getCart
+    CartDTO getCart(Long userId);
+
+    String  createCart(Long userId);
 
     //checkOut
 }

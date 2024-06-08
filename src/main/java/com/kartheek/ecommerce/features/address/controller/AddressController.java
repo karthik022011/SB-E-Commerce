@@ -25,7 +25,7 @@ public class AddressController {
 
     @GetMapping("/address/{userId}")
     public ResponseEntity<ApiResponse<List<AddressDTO>>> getProductsByCategory(@PathVariable Long userId) {
-        List<AddressDTO> addresses = addressService.getAddressByUserId(userId);
+        List<AddressDTO> addresses = addressService.getAllAddressByUserId(userId);
         ApiResponse<List<AddressDTO>> response = new ApiResponse<>();
         response.setStatus(HttpStatus.OK.value());
         response.setSuccess(true);

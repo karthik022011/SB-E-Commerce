@@ -1,0 +1,7 @@
+
+
+GET http://localhost:8082/api/cart/create/1
+
+GET http://localhost:8082/api/cart
+
+POST http://localhost:8082/api/cart/product/add

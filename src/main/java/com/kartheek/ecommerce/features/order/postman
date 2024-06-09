@@ -1,0 +1,22 @@
+
+
+POST http://localhost:8082/api/order/place -> Place Order
+{
+  "userId": 1,
+  "orderItems": [
+    {
+      "productId": 1,
+      "quantity": 2
+    }
+  ],
+  "shippingAddress": {
+   "buildingName": "123",
+    "street": "123 Main St",
+    "city": "Springfield",
+    "state": "IL",
+    "pinCode": "12345",
+    "country": "USA"
+  }
+}
+
+GET http://localhost:8082/api/order/user/1 -> user id -> Get All Order By user id

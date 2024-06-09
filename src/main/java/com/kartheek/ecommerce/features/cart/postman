@@ -1,7 +1,12 @@
 
 
-GET http://localhost:8082/api/cart/create/1
+GET http://localhost:8082/api/cart/create/1 -> user id
 
-GET http://localhost:8082/api/cart
+GET http://localhost:8082/api/cart -> GetCart
 
-POST http://localhost:8082/api/cart/product/add
+POST http://localhost:8082/api/cart/product/add -> Add Product to cart
+{
+    "productId" : "1",
+     "quantity" : "2",
+      "userId" : "1"
+}

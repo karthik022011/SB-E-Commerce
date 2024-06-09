@@ -37,11 +37,6 @@ public class CartController {
         return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 
-    @PostMapping("/update")
-    public void updateCartItem(){
-
-    }
-
     @PostMapping("/product/delete")
     public void deleteCartItem(){
 
